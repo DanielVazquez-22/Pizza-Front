@@ -23,14 +23,25 @@ header {
   color: var(--white);
   padding: 0.5rem 1.25rem;
   /*Añadimos flex*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 header nav ul {
   /*Añadimos flex*/
+  display:flex;
+  gap: 10px;
+  
+  
 }
 
-header .header__logo {
+header .header__logo {display: flex;
   /*Añadimos flex*/
+  align-items: center;
+  gap: 25px;
 }
 
 header .header__logo span,
@@ -43,13 +54,18 @@ footer .footer__logo span:nth-child(2) {
 }
 main {
     padding: 35px 0px;
+    
     /* Alto del main: alto viewport - alto Header - alto Footer 
        Me aseguro que el main ocupa todo el alto disponible */
-    min-height: calc(100vh - 100px - 150px);  
+    min-height: calc(100vh - 100px - 150px);
 }
 
-main .container {
+main .container {display: flex;
   /*Añadimos flex*/
+  gap: 30px;
+  align-self: start;
+  justify-content: center;
+  
 }
 
 main section .card {
@@ -72,6 +88,12 @@ main section .podio {
   background: #fff;
   font-weight: bold;
   /*Añadimos flex*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 main section .podio h3 {
   color: var(--red);
@@ -88,6 +110,8 @@ main section .podio h3 {
 
 .top5 {
   /*Añadimos flex*/
+  display: flex;
+  gap: 30px;
 }
 
 .top5 .podio__pizzas ol li {
@@ -97,26 +121,37 @@ main section .podio h3 {
 .top5 .podio__img {
   padding-bottom: 60px;
   /*Añadimos flex*/
+  display: flex;
 }
 
 footer {
   background: #222;
   padding: 19px 20px;
   /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
 }
 
 footer .footer__logo {
   color: var(--lightWhite);
   font-size: 14px;
   /*Añadimos flex*/
+  display: flex;
+  order: 1;
+  gap: 20px;
+  align-items: center;
 }
 
 footer ul {
   color: var(--lightWhite);
   /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  
 }
 
 @media screen and (max-width:  768px) {
    /* - Ocultar los botone de nav (del header)
       - Añadir el ícono hamburguesa */
+      
 }
