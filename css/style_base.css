@@ -24,24 +24,21 @@ header {
   padding: 0.5rem 1.25rem;
   /*Añadimos flex*/
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 header nav ul {
   /*Añadimos flex*/
   display:flex;
-  gap: 10px;
-  
-  
+  gap: 13px;
 }
 
 header .header__logo {display: flex;
   /*Añadimos flex*/
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
 
 header .header__logo span,
@@ -60,11 +57,13 @@ main {
     min-height: calc(100vh - 100px - 150px);
 }
 
-main .container {display: flex;
-  /*Añadimos flex*/
-  gap: 30px;
-  align-self: start;
+/*Añadimos flex*/
+main .container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
   
 }
 
@@ -89,11 +88,8 @@ main section .podio {
   font-weight: bold;
   /*Añadimos flex*/
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
-  align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
 }
 main section .podio h3 {
   color: var(--red);
@@ -111,7 +107,8 @@ main section .podio h3 {
 .top5 {
   /*Añadimos flex*/
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 88px;
 }
 
 .top5 .podio__pizzas ol li {
@@ -122,6 +119,7 @@ main section .podio h3 {
   padding-bottom: 60px;
   /*Añadimos flex*/
   display: flex;
+  align-items: flex-end;
 }
 
 footer {
@@ -130,6 +128,7 @@ footer {
   /*Añadimos flex*/
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer .footer__logo {
@@ -138,7 +137,7 @@ footer .footer__logo {
   /*Añadimos flex*/
   display: flex;
   order: 1;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -147,6 +146,7 @@ footer ul {
   /*Añadimos flex*/
   display: flex;
   flex-direction: column;
+  gap: 12px;
   
 }
 
@@ -160,12 +160,12 @@ footer ul {
 visibility:hidden;
 
 }
-header nav {
-  font-weight: 800;
+header nav::before {
   font-size: 2rem;
 }
-.container {
+
+main .container {
   flex-direction: column;
-  width: 50%;
+  align-content: space-between;
 }
 }
